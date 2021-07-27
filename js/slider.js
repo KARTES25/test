@@ -28,3 +28,8 @@ function showSlides(n) {
     }   
     slides[slideIndex - 1].style.display = "block"; 
 }
+
+$('li').on('click', function(){
+    $('li').removeClass('active');
+    $(this).toggleClass('active');
+ })

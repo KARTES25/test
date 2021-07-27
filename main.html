@@ -3,38 +3,50 @@
     <head>
         <meta charset="UTF-8">
 	    <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
         <script src="js/popap.js"></script>
         <script src="js/slider.js"></script>
+
         <title>GPNEVENT</title>
     </head>
     <body>
-            <div>
-        <div class="menu">
+    <div class="glat">
+        <div class="menu1">  
+        </div>
+
+
+        <div class="menu" id="menu">
+            <a class="icon" onclick="openmob()">
+                <img id="logo2" src="img/Group.png">
+                <img id = "burg" src="img/menu.png">
+              </a>
             <ul class="dws-ul">
-                <li class="dws-li"><img src="img/Group.png"></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/1.png"> <span>Главная</span></a></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/2.png"><span>Мой профиль</span></a></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/3.png"><span>Открытки</span></a></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/4.png"><span>Тайный санта</span></a></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/5.png"><span>Колесо удачи</span></a></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/6.png"><span>Квиз-драйв</span></a></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/7.png"><span>Лайфхаки</span></a></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/8.png"><span>Квест</span></a></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/9.png"><span>Предсказания</span></a></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/10.png"><span>Поле чудес</span></a></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/11.png"><span>Конкурс талантов</span></a></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/12.png"><span>Мастер-классы</span></a></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/13.png"><span>КВН в кругу друзей</span></a></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/14.png"><span>Новогоднее путешествие</span></a></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/15.png"><span>Сувенирная лавка</span></a></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/16.png"><span>Нужна помошь?</span></a></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/17.png"><span>Контакты</span></a></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/18.png"><span>Instagramи</span></a></li>
-                <li class="dws-li"><a href="#"><img src="img/menu/19.png"><span>Telegram</span></a></li>
+                <li class="dws-li"><img id="logo" src="img/Group.png"></li>
+                <li class="dws-li" id="op"><a href="#" class="a1"><img src="img/vect.png" id="im1" onclick="openm();"><img src="img/vect2.png" id="im2" onclick="closem();"><span class="spa1">Свернуть</span></a></li>
+                <li class="dws-li"><a href="#" class="a1"><img src="img/menu/1.png"> <span class="spa1">Главная</span></a></li>
+                <li class="dws-li"><a href="#" class="a1"><img src="img/menu/2.png"><span class="spa1">Мой профиль</span></a></li>
+                <li class="dws-li"><a href="#" class="a1"><img src="img/menu/3.png"><span class="spa1">Открытки</span></a></li>
+                <li class="dws-li"><a href="#" class="a1"><img src="img/menu/4.png"><span class="spa1">Тайный санта</span></a></li>
+                <li class="dws-li"><a href="#" class="a1"><img src="img/menu/5.png"><span class="spa1">Колесо удачи</span></a></li>
+                <li class="dws-li"><a href="#" class="a1"><img src="img/menu/6.png"><span class="spa1">Квиз-драйв</span></a></li>
+                <li class="dws-li"><a href="#" class="a1"><img src="img/menu/7.png"><span class="spa1">Лайфхаки</span></a></li>
+                <li class="dws-li"><a href="main.html" class="a1"><img src="img/menu/8.png"><span class="spa1">Квест</span></a></li>
+                <li class="dws-li"><a href="#" class="a1"><img src="img/menu/9.png"><span class="spa1">Предсказания</span></a></li>
+                <li class="dws-li"><a href="#" class="a1"><img src="img/menu/10.png"><span class="spa1">Поле чудес</span></a></li>
+                <li class="dws-li"><a href="#" class="a1"><img src="img/menu/11.png"><span class="spa1">Конкурс талантов</span></a></li>
+                <li class="dws-li"><a href="#" class="a1"><img src="img/menu/12.png"><span class="spa1">Мастер-классы</span></a></li>
+                <li class="dws-li"><a href="#" class="a1"><img src="img/menu/13.png"><span class="spa1">КВН в кругу друзей</span></a></li>
+                <li class="dws-li"><a href="#" class="a1"><img src="img/menu/14.png"><span class="spa1">Новогоднее путешествие</span></a></li>
+                <li class="dws-li"><a href="#" class="a1"><img src="img/menu/15.png"><span class="spa1">Сувенирная лавка</span></a></li>
+                <li class="dws-li"><a href="#" class="a1"><img src="img/menu/16.png"><span class="spa1">Нужна помошь?</span></a></li>
+                <li class="dws-li"><a href="#" class="a1"><img src="img/menu/17.png"><span class="spa1">Контакты</span></a></li>
+                <li class="dws-li"><a href="#" class="a1"><img src="img/menu/18.png"><span class="spa1">Instagramи</span></a></li>
+                <li class="dws-li"><a href="#" class="a1"><img src="img/menu/19.png"><span class="spa1">Telegram</span></a></li>
             </ul>
         </div>
-        <!-- <include src="./menu.html"></include> -->
 
+        <!-- <include src="./menu.html"></include> -->
+        <script src="js/menu.js"></script>
         <div class="image-controlled">			
                 <img src="img/ngkvest.png">
                 <div class="content2">
@@ -185,8 +197,8 @@
             <ul class="sortmenu">
               <li><a>Сортировать ∨</a>
                 <ul class="subsortmenu">
-                  <li id="kard1"><a onclick="sort1()">Сначала новые</a></li>
-                  <li id="kard2"><a onclick="sort2()">Сначала старые</a></li>
+                  <li id="kard1"><a onclick="sort1()">Ранние</a></li>
+                  <li id="kard2"><a onclick="sort2()">Поздние</a></li>
                 </ul>
               </li>
             </ul>
@@ -275,7 +287,7 @@
                     </div>
                 </li>
             </ul>
-            <div class="popapglavn" id="popapglavn">
+            <!-- <div class="popapglavn" id="popapglavn">
                 <div class="popup-card" id="popup-carde">
                     <img src="" id="popapImgCard">
                     <p class="MSK">МСК</p> <p class="Datec" id="popapDataCard"></p>
@@ -284,97 +296,106 @@
                     </p>
                     <button type="submit" class="btn-cancel2" onclick="closeP2()"><image src="img/error1.png"></image></button>
                 </div>
-            </div>
+            </div> -->
             <button class="zagruska-proizvod-btn" id="btnall1" onclick="allcard()">ЗАГРУЗИТЬ ЕЩЕ</button> 
             
         </div>
         <div class="content-cards" id="content-cards2">
             <input type="checkbox" id="zagruska-proizvods"/>
             <ul class="cards">
-                <li id="card1" class="card_2">
+                <li id="card11" class="card_2">
                     <div class="content-card">
                         <img src="img/img1.png">
                         <p class="MSK">МСК</p><p class="Datec">31.12.2020 10:25</p>
                         <h1 class="zagl-card">Новогодний квест</h1>
                         <p class="text-card">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.
                         </p>
-                        <button class="open-card" onclick="OpenCard(1)">Смотреть запись</button>
+                        <button class="open-card" onclick="OpenCard(11)">Смотреть запись</button>
                     </div>
                 </li>
-                <li id="card2" class="card_2">
+                <li id="card12" class="card_2">
                     <div class="content-card">
                         <img src="img/img2.png">
                         <p class="MSK">МСК</p><p class="Datec">20.12.2020 15:00</p>
                         <h1 class="zagl-card">Новогодний квест</h1>
                         <p class="text-card">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.
                         </p>
-                        <button class="open-card">Смотреть запись</button>
+                        <button class="open-card" onclick="OpenCard(12)">Смотреть запись</button>
                     </div>
                 </li>
-                <li id="card3" class="card_2">
+                <li id="card13" class="card_2">
                     <div class="content-card">
                         <img src="img/img.png">
                         <p class="MSK">МСК</p><p class="Datec">31.12.2020 15:00</p>
                         <h1 class="zagl-card">Новогодний квест</h1>
                         <p class="text-card">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.
                         </p>
-                        <button class="open-card">Смотреть запись</button>
+                        <button class="open-card" onclick="OpenCard(13)">Смотреть запись</button>
                     </div>
                 </li>
-                <li id="card4" class="card_2">
+                <li id="card14" class="card_2">
                     <div class="content-card">
                         <img src="img/img.png">
                         <p class="MSK">МСК</p><p class="Datec">18.12.2020 15:00</p>
                         <h1 class="zagl-card">Новогодний квест</h1>
                         <p class="text-card">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.
                         </p>
-                        <button class="open-card">Смотреть запись</button>
+                        <button class="open-card" onclick="OpenCard(14)">Смотреть запись</button>
                     </div>
                 </li>
-                <li id="card5" class="card_2">
+                <li id="card15" class="card_2">
                     <div class="content-card">
                         <img src="img/img1.png">
                         <p class="MSK">МСК</p><p class="Datec">25.12.2020 14:00</p>
                         <h1 class="zagl-card">Новогодний квест</h1>
                         <p class="text-card">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.
                         </p>
-                        <button class="open-card">Смотреть запись</button>
+                        <button class="open-card" onclick="OpenCard(15)">Смотреть запись</button>
                     </div>
                 </li>
-                <li id="card6" class="card_2">
+                <li id="card16" class="card_2">
                     <div class="content-card">
                         <img src="img/img2.png">
                         <p class="MSK">МСК</p><p class="Datec">18.12.2020 13:00</p>
                         <h1 class="zagl-card">Новогодний квест</h1>
                         <p class="text-card">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.
                         </p>
-                        <button class="open-card">Смотреть запись</button>
+                        <button class="open-card" onclick="OpenCard(16)">Смотреть запись</button>
                     </div>
                 </li>
-                <li id="card7" class="card_2">
+                <li id="card17" class="card_2">
                     <div class="content-card">
                         <img src="img/img.png">
                         <p class="MSK">МСК</p><p class="Datec">16.12.2020 12:00</p>
                         <h1 class="zagl-card">Новогодний квест</h1>
                         <p class="text-card">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.
                         </p>
-                        <button class="open-card">Смотреть запись</button>
+                        <button class="open-card" onclick="OpenCard(17)">Смотреть запись</button>
                     </div>
                 </li>
-                <li id="card8" class="card_2">
+                <li id="card18" class="card_2">
                     <div class="content-card">
                         <img src="img/img1.png">
                         <p class="MSK">МСК</p><p class="Datec">14.12.2020 11:00</p>
                         <h1 class="zagl-card">Новогодний квест</h1>
                         <p class="text-card">Из самых обычных шерстяных ниток можно создавать оригинальные праздничные украшения и новогодние елочные игрушки. Нитки — это безопасный материал, с которым смогут работать даже дошкольники. Мы покажем вам несколько способов изготовления игрушек из шерстяных ниток.
                         </p>
-                        <button class="open-card">Смотреть запись</button>
+                        <button class="open-card" onclick="OpenCard(18)">Смотреть запись</button>
                     </div>
                 </li>
             </ul>
             <button class="zagruska-proizvod-btn" id="btnall2" onclick="allcard2()">ЗАГРУЗИТЬ ЕЩЕ</button> 
         </div>
-
+        <div class="popapglavn" id="popapglavn">
+            <div class="popup-card" id="popup-carde">
+                <img src="" id="popapImgCard">
+                <p class="MSK">МСК</p> <p class="Datec" id="popapDataCard"></p>
+                <h1 class="zagl-card" id="popapZaglCard"></h1>
+                <p class="text-card2" id="popapTXTCard">
+                </p>
+                <button type="submit" class="btn-cancel2" onclick="closeP2()"><image src="img/error1.png"></image></button>
+            </div>
+        </div>
     </div>
 
 </div>
